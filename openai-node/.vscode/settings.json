@@ -10,5 +10,7 @@
     "pnpm-workspace.yaml": true
   },
   "github.copilot.selectedCompletionModel": "deepseek-v4-flash",
-  "github.copilot.chat.executionSubagent.model": "deepseek-v4-flash"
+  "github.copilot.chat.executionSubagent.model": "deepseek-v4-flash",
+  "editor.formatOnSave": true,
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }

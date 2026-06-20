@@ -4,8 +4,14 @@
   "tabWidth": 2,
   "printWidth": 110,
   "singleQuote": true,
-  "trailingComma": "all",
+  "trailingComma": "none",
+  "useTabs": false,
   "sortPackageJson": false,
+  "semi": true,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "embeddedLanguageFormatting": "auto",
+
   "ignorePatterns": [
     "CHANGELOG.md",
     "jsr.json",

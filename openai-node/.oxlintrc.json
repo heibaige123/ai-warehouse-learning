@@ -7,7 +7,9 @@
   },
   "rules": {
     "no-unused-vars": "off",
-    "no-underscore-dangle": ["error", { "allow": ["encodeUTF8_", "decodeUTF8_"] }],
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-named-as-default-member": "off",
     "no-restricted-imports": [
       "error",
       {
