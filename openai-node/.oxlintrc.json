@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "import", "oxc"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-underscore-dangle": ["error", { "allow": ["encodeUTF8_", "decodeUTF8_"] }],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "regex": "^openai(/.*)?$",
+            "message": "Use a relative import, not a package import."
+          }
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["tests/**", "examples/**", "ecosystem-tests/**"],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["dist/", "dist-deno/", "api-docs/", "**/_vendor/**"]
+}
